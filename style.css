@@ -1,0 +1,60 @@
+body {
+    font-family: 'Minecraftia', sans-serif;
+    margin: 0;
+    background-color: #f4f1e1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#book {
+    width: 600px;
+    height: 400px;
+    background: #c4a484;
+    border: 5px solid #8b5e3c;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    position: relative;
+}
+.book-header {
+    background: #8b5e3c;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.page {
+    flex: 1;
+    padding: 20px;
+    background: #fdf4e3;
+    color: #333;
+    display: none;
+    font-size: 1.2em;
+    text-align: center;
+}
+.page.active {
+    display: block;
+}
+.book-footer {
+    background: #8b5e3c;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.book-footer button {
+    background: #fdf4e3;
+    border: 2px solid #8b5e3c;
+    color: #8b5e3c;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+.book-footer button:hover {
+    background: #e3d3b8;
+}
